@@ -1,0 +1,142 @@
+/* 全域設定 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 20px;
+    padding: 0;
+  }
+  
+  /* 容器樣式 */
+  .container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  /* 標題樣式 */
+  h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #000000;
+  }
+  
+  /* 表單元素樣式 */
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+  }
+  
+  input[type="text"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  /* 選擇框與單選框群組樣式 */
+  .checkbox-group,
+  .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 15px;
+  }
+  
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 6px;
+  }
+  
+  /* 建議文字框 */
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  /* 送出按鈕樣式 */
+  button {
+    background-color: #026fd6;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  /* 媒體區塊容器 */
+.media-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 標題樣式 */
+  .media-section h3 {
+    font-size: 1.3em;
+    color: #4CAF50;
+    margin-bottom: 15px;
+  }
+  
+  /* 影片容器 */
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 比例 */
+    margin-bottom: 20px;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+  
+  /* 圖片畫廊樣式 */
+  .image-gallery {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto; /* 若超過寬度可左右滑動 */
+  }
+  
+  .image-gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-gallery img:hover {
+    transform: scale(1.1);
+  }
+  

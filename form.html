@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>行程調查表單</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+<div class="container">
+  <h2>行程調查表單</h2>
+  
+  <!-- 新增 action 與 method -->
+  <form action="https://formspree.io/f/mjkybgwr" method="POST">
+    <!-- 個人資料 -->
+    <label for="name">姓名：</label>
+    <input type="text" id="name" name="name" placeholder="請輸入您的姓名" required />
+    
+    <label for="address">地址：</label>
+    <input type="text" id="address" name="address" placeholder="請輸入您的地址" required />
+
+    <!-- 行程相關 -->
+    <h3>行程相關</h3>
+    
+    <label>可參加行程日期：(可複選)</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="date[]" value="midterm"> 期中考後</label>
+      <label><input type="checkbox" name="date[]" value="final"> 期末考後</label>
+      <label><input type="checkbox" name="date[]" value="summer"> 暑假期間</label>
+    </div>
+
+    <label>喜歡的地點是：(單選)</label>
+    <div class="radio-group">
+      <label><input type="radio" name="location" value="lake"> 游湖</label>
+      <label><input type="radio" name="location" value="forest"> 綠島</label>
+      <label><input type="radio" name="location" value="mountain"> 阿里山</label>
+      <label><input type="radio" name="location" value="101"> 台北101</label>
+    </div>
+
+    <label for="suggestions">其它需求或建議可以寫在此：</label>
+    <textarea id="suggestions" name="suggestions" placeholder="請輸入建議或需求..."></textarea>
+
+    <label for="other">其它行程建議：</label>
+    <input type="text" id="other" name="other" placeholder="請輸入其它行程建議" />
+
+    <!-- 送出按鈕 -->
+    <button type="submit">提交</button>
+  </form>
+</div>
+
+<!-- 新增影片與圖片區塊 -->
+<div class="media-section">
+  <!-- 影片區塊 -->
+  <h3>行程影片</h3>
+  <div class="video-container">
+    <!-- 替換成自己的影片連結 -->
+    <iframe 
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- 圖片區塊 -->
+  <h3>行程照片</h3>
+  <div class="image-gallery">
+    <!-- 替換成自己的圖片連結 -->
+    <img src="Chill-Guy.jpg" alt="行程照片1">
+    <img src="Chill-Guy.jpg" alt="行程照片2">
+    <img src="Chill-Guy.jpg" alt="行程照片3">
+  </div>
+</div>
+
+</body>
+</html>
