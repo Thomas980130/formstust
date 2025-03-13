@@ -1,142 +1,174 @@
 /* 全域設定 */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 20px;
-    padding: 0;
-  }
-  
-  /* 容器樣式 */
-  .container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    max-width: 600px;
-    margin: 20px auto;
-  }
-  
-  /* 標題樣式 */
-  h2 {
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-size: 1.5em;
-    color: #000000;
-  }
-  
-  /* 表單元素樣式 */
-  label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 6px;
-  }
-  
-  input[type="text"],
-  textarea,
-  select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
-    font-size: 16px;
-  }
-  
-  input[type="text"]:focus,
-  textarea:focus,
-  select:focus {
-    border-color: #4CAF50;
-    outline: none;
-  }
-  
-  /* 選擇框與單選框群組樣式 */
-  .checkbox-group,
-  .radio-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 15px;
-  }
-  
-  input[type="checkbox"],
-  input[type="radio"] {
-    margin-right: 6px;
-  }
-  
-  /* 建議文字框 */
-  textarea {
-    height: 100px;
-    resize: none;
-  }
-  
-  /* 送出按鈕樣式 */
-  button {
-    background-color: #026fd6;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  /* 媒體區塊容器 */
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 20px;
+  padding: 0;
+}
+
+/* 容器樣式 */
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* 標題樣式 */
+h2, h3 {
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #000000;
+}
+
+/* 表單元素樣式 */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* 選擇框與單選框群組樣式 */
+.checkbox-group,
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 6px;
+}
+
+/* 建議文字框 */
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* 送出按鈕樣式 */
+button {
+  background-color: #026fd6;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* ==== 媒體區塊樣式 ==== */
 .media-section {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* 標題樣式 */
-  .media-section h3 {
-    font-size: 1.3em;
-    color: #4CAF50;
-    margin-bottom: 15px;
-  }
-  
-  /* 影片容器 */
-  .video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 比例 */
-    margin-bottom: 20px;
-  }
-  
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 標題樣式 */
+.media-section h3 {
+  font-size: 1.3em;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+/* ====== 影片樣式 ====== */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.video-container iframe {
+  width: 100%; /* 在響應式下保持寬度 100% */
+  height: 400px; /* 固定高度 */
+  max-width: 900px; /* 最大寬度 */
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* 增加陰影效果 */
+  transition: transform 0.3s ease;
+}
+
+.video-container iframe:hover {
+  transform: scale(1.02); /* 滑鼠懸停時微微放大 */
+}
+
+/* ====== 圖片樣式 ====== */
+.image-gallery {
+  display: flex;
+  gap: 20px; /* 增加間距 */
+  overflow-x: auto; /* 若超出螢幕範圍可左右滑動 */
+  padding-bottom: 10px;
+  justify-content: center;
+}
+
+.image-gallery img {
+  width: 240px; /* 調整圖片寬度 */
+  height: 160px; /* 調整圖片高度 */
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.image-gallery img:hover {
+  transform: scale(1.1); /* 放大效果 */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
   .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
+    height: 300px;
   }
-  
-  /* 圖片畫廊樣式 */
-  .image-gallery {
-    display: flex;
-    gap: 10px;
-    overflow-x: auto; /* 若超過寬度可左右滑動 */
-  }
-  
+
   .image-gallery img {
-    width: 200px;
+    width: 180px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-container iframe {
     height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
   }
-  
-  .image-gallery img:hover {
-    transform: scale(1.1);
+
+  .image-gallery img {
+    width: 140px;
+    height: 100px;
   }
-  
+}
