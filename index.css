@@ -137,8 +137,8 @@ button:hover {
 }
 
 .image-gallery img {
-  width: 240px; /* 調整圖片寬度 */
-  height: 0px; /* 調整圖片高度 */
+  width: 250px; /* 調整圖片寬度 */
+  height: 380px; /* 調整圖片高度 */
   object-fit: cover;
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
